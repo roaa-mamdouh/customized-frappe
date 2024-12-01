@@ -1,0 +1,9 @@
+frappe
+erpnext
+my_crm_app
+propms
+crm
+csf_tz
+quick_kanban
+sundae_theme
+sidebar_collapsed_default

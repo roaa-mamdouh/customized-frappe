@@ -1,0 +1,91 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "16.0.0-dev"
+    },
+    "erpnext": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "f5610e29bed1b1bcc456e0354ad3deabfd28f2e7",
+            "branch": "version-15"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "15.41.1"
+    },
+    "csf_tz": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "c03aeb52430656e214e023e93c7a6da42858316f",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 3,
+        "version": "2.1.0"
+    },
+    "propms": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "222b048488fe599affcfe683e44542b90a021b59",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 4,
+        "version": "1.7.0"
+    },
+    "sundae_theme": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "87a883e304f56947039ec59b7a5108c14f232aa0",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 5,
+        "version": "0.0.1"
+    },
+    "crm": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "9caae47ec49fcdfaed5861dc675f4731a3add577",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 6,
+        "version": "2.0.0-dev"
+    },
+    "quick_kanban": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "a27e353624f4b931be4e8c7cc1c59b44af7804b5",
+            "branch": "main"
+        },
+        "required": [],
+        "idx": 7,
+        "version": "0.0.1"
+    },
+    "my_crm_app": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "5f43e5e8e415ee9a8a17405835954e025646032b",
+            "branch": "develop"
+        },
+        "required": [],
+        "idx": 8,
+        "version": "0.0.1"
+    },
+    "sidebar_collapsed_default": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "bfe11af5427b5fc58cfd7d79a68486fe3ba8148c",
+            "branch": "v15"
+        },
+        "required": [],
+        "idx": 9,
+        "version": "1.0.0"
+    }
+}

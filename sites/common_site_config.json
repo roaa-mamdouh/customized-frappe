@@ -1,0 +1,23 @@
+{
+ "background_workers": 1,
+ "default_site": "final.local",
+ "developer_mode": 1,
+ "file_watcher_port": 6788,
+ "frappe_user": "roaa",
+ "gunicorn_workers": 11,
+ "live_reload": true,
+ "maintenance_mode": 1,
+ "pause_scheduler": 1,
+ "rebase_on_pull": false,
+ "redis_cache": "redis://127.0.0.1:13001",
+ "redis_queue": "redis://127.0.0.1:11001",
+ "redis_socketio": "redis://127.0.0.1:13001",
+ "restart_supervisor_on_update": false,
+ "restart_systemd_on_update": false,
+ "serve_default_site": true,
+ "server_script_enabled": 1,
+ "shallow_clone": true,
+ "socketio_port": 9001,
+ "use_redis_auth": false,
+ "webserver_port": 8001
+}

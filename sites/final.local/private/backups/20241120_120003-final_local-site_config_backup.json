@@ -1,0 +1,9 @@
+{
+ "allow_tests": true,
+ "db_name": "_ff146c3941d058c1",
+ "db_password": "TAObcjFxqGqqs4DN",
+ "db_type": "mariadb",
+ "db_user": "_ff146c3941d058c1",
+ "encryption_key": "2vb5St2I5J-G3U8bKxkSM6K9rC-UuWkqsmyweVvDDRQ=",
+ "maintenance_mode": 0
+}
