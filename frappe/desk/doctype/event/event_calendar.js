@@ -5,16 +5,8 @@ frappe.views.calendar['Event'] = {
  id: 'name',
  allDay: 'all_day',
  title: 'subject',
- status: 'event_type',
+ status: 'status',
  color: 'color'
  },
- gantt: { // The values set here will override the values set in the object just for Gantt View
- order_by: 'starts_on',
- }
- style_map: {
- Public: 'success',
- Private: 'info'
- },
- order_by: 'starts_on',
- get_events_method: 'frappe.desk.doctype.event.event.get_events'
-}
+ gantt: true
+};
