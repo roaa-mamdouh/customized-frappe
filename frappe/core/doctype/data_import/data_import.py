@@ -27,9 +27,11 @@ class DataImport(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
+		automatic_assignment: DF.Check
 		google_sheets_url: DF.Data | None
 		import_file: DF.Attach | None
 		import_type: DF.Literal["", "Insert New Records", "Update Existing Records"]
+		in_import: DF.Check
 		mute_emails: DF.Check
 		payload_count: DF.Int
 		reference_doctype: DF.Link

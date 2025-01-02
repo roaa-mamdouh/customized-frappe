@@ -9,6 +9,7 @@
  "field_order": [
   "user_details_tab",
   "enabled",
+  "is_absent",
   "section_break_3",
   "email",
   "first_name",
@@ -628,7 +629,7 @@
    "fieldname": "desk_theme",
    "fieldtype": "Select",
    "label": "Desk Theme",
-   "options": "Light\nDark\nAutomatic"
+   "options": "Light\nDark\nAutomatic\nWatermelon"
   },
   {
    "fieldname": "module_profile",
@@ -741,8 +742,7 @@
    "description": "Redirect to the selected app after login",
    "fieldname": "default_app",
    "fieldtype": "Select",
-   "label": "Default App",
-   "options": ""
+   "label": "Default App"
   },
   {
    "collapsible": 1,
@@ -809,6 +809,12 @@
    "fieldname": "dashboard",
    "fieldtype": "Check",
    "label": "Dashboard"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_absent",
+   "fieldtype": "Check",
+   "label": "Is absent"
   }
  ],
  "icon": "fa fa-user",
@@ -871,7 +877,7 @@
    "link_fieldname": "user"
   }
  ],
- "modified": "2024-09-27 11:41:13.336662",
+ "modified": "2025-01-02 12:33:51.566471",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",

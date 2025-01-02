@@ -16,7 +16,9 @@ before_install = "frappe.utils.install.before_install"
 after_install = "frappe.utils.install.after_install"
 
 page_js = {"setup-wizard": "public/js/frappe/setup_wizard.js"}
-
+#sounds = [
+#    {"name": "cele", "src": "public/sounds/cele.mp3", "volume": 1}
+#]
 # website
 app_include_js = [
 	"libs.bundle.js",

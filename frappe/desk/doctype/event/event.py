@@ -52,7 +52,7 @@ class Event(Document):
 		color: DF.Color | None
 		description: DF.TextEditor | None
 		ends_on: DF.Datetime | None
-		event_category: DF.Literal["Event", "Meeting", "Call", "Sent/Received Email", "Other"]
+		event_category: DF.Literal["Event", "Call", "Showing", "Visiting", "Finishing Deal", "Other"]
 		event_participants: DF.Table[EventParticipants]
 		event_type: DF.Literal["Private", "Public"]
 		friday: DF.Check

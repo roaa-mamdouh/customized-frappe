@@ -8,6 +8,8 @@
  "engine": "InnoDB",
  "field_order": [
   "reference_doctype",
+  "automatic_assignment",
+  "in_import",
   "import_type",
   "download_template",
   "import_file",
@@ -167,11 +169,25 @@
    "hidden": 1,
    "label": "Payload Count",
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.reference_doctype == 'CRM Lead'",
+   "fieldname": "automatic_assignment",
+   "fieldtype": "Check",
+   "label": "Automatic Assignment"
+  },
+  {
+   "default": "1",
+   "fieldname": "in_import",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "In Import"
   }
  ],
  "hide_toolbar": 1,
  "links": [],
- "modified": "2024-01-30 17:08:05.566686",
+ "modified": "2025-01-02 13:18:32.602325",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "Data Import",

@@ -314,13 +314,13 @@
    "fieldname": "event_category",
    "fieldtype": "Select",
    "label": "Event Category",
-   "options": "Event\nMeeting\nCall\nSent/Received Email\nOther"
+   "options": "Event\nCall\nShowing\nVisiting\nFinishing Deal\nOther"
   }
  ],
  "icon": "fa fa-calendar",
  "idx": 1,
  "links": [],
- "modified": "2024-11-26 21:02:20.789225",
+ "modified": "2024-12-18 16:49:33.088918",
  "modified_by": "Administrator",
  "module": "Desk",
  "name": "Event",
