@@ -7,7 +7,7 @@ frappe.ui.form.on("Event", {
 		frm.set_query("reference_doctype", "event_participants", function () {
 			return {
 				filters: {
-					issingle: 0,
+					"name": ["in", ["CRM Lead", "User"]],
 				},
 			};
 		});
