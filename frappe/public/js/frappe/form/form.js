@@ -1940,36 +1940,43 @@ frappe.ui.form.Form = class FrappeForm {
 
 	scroll_to_field(fieldname, focus = true) {
 		let field = this.get_field(fieldname);
-		if (!field) return;
-
+		if (!field) return false;
+	
 		let $el = field.$wrapper;
-
+		if (!$el || !$el.length) return false;
+	
 		// set tab as active
 		if (field.tab && !field.tab.is_active()) {
 			field.tab.set_active();
 		}
-
+	
 		// uncollapse section
-		if (field.section?.is_collapsed()) {
+		if (field.section && field.section.is_collapsed()) {
 			field.section.collapse(false);
 		}
-
+	
 		// scroll to input
 		frappe.utils.scroll_to($el, true, 15);
-
+	
 		// focus if text field
 		if (focus) {
 			setTimeout(() => {
-				$el.find("input, select, textarea").focus();
+				let inputElement = $el.find("input, select, textarea");
+				if (inputElement.length) {
+					inputElement.focus();
+				}
 			}, 500);
 		}
-
+	
 		// highlight control inside field
 		let control_element = $el.closest(".frappe-control");
-		control_element.addClass("highlight");
-		setTimeout(() => {
-			control_element.removeClass("highlight");
-		}, 2000);
+		if (control_element.length) {
+			control_element.addClass("highlight");
+			setTimeout(() => {
+				control_element.removeClass("highlight");
+			}, 2000);
+		}
+	
 		return true;
 	}
 
